@@ -3,7 +3,8 @@ call pathogen#infect()
 call pathogen#helptags()
 filetype on
 filetype plugin indent on
-colorscheme desert
+set background=dark
+colorscheme solarized
 if has("autocmd")
   augroup module
     autocmd BufRead,BufNewFile *.module set filetype=php
