@@ -3,7 +3,8 @@ call pathogen#infect()
 call pathogen#helptags()
 filetype on
 filetype plugin indent on
-colorscheme desert
+set background=dark
+colorscheme solarized 
 if has("autocmd")
   " Drupal *.module and *.install files.
   augroup module
