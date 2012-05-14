@@ -11,6 +11,7 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.module set filetype=php
     autocmd BufRead,BufNewFile *.install set filetype=php
     autocmd BufRead,BufNewFile *.test set filetype=php
+		autocmd BufRead,BufNewFile *.as set filetype=actionscript
   augroup END
 	autocmd BufReadPost fugitive://* set bufhidden=delete
 endif
