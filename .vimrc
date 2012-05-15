@@ -4,12 +4,13 @@ call pathogen#helptags()
 filetype on
 filetype plugin indent on
 set background=dark
-colorscheme solarized
+colorscheme solarized 
 if has("autocmd")
   augroup module
     autocmd BufRead,BufNewFile *.module set filetype=php
     autocmd BufRead,BufNewFile *.install set filetype=php
     autocmd BufRead,BufNewFile *.test set filetype=php
+		autocmd BufRead,BufNewFile *.as set filetype=actionscript
   augroup END
 endif
 syntax on
