@@ -13,6 +13,7 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.test set filetype=php
 		autocmd BufRead,BufNewFile *.as set filetype=actionscript
   augroup END
+	autocmd BufReadPost fugitive://* set bufhidden=delete
 endif
 syntax on
 set number
@@ -44,3 +45,6 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
+
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
