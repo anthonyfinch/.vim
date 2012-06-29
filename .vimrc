@@ -31,6 +31,7 @@ map <c-h> <c-w>h
 map <leader>l <Plug>TaskList
 map <leader>g :GundoToggle<CR>
 map <leader>n :NERDTreeToggle<CR>
+map <leader>t :TlistToggle<CR>
 nmap <C-S-tab> :tabprevious<CR>
 nmap <C-tab> :tabnext<CR>
 map <C-S-tab> :tabprevious<CR>
