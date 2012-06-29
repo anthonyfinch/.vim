@@ -4,6 +4,7 @@ call pathogen#helptags()
 filetype on
 filetype plugin indent on
 set background=dark
+set updatetime=4000
 colorscheme solarized 
 if has("autocmd")
   augroup module
@@ -29,6 +30,14 @@ map <c-h> <c-w>h
 map <leader>l <Plug>TaskList
 map <leader>g :GundoToggle<CR>
 map <leader>n :NERDTreeToggle<CR>
+nmap <C-S-tab> :tabprevious<CR>
+nmap <C-tab> :tabnext<CR>
+map <C-S-tab> :tabprevious<CR>
+map <C-tab> :tabnext<CR>
+imap <C-S-tab> <Esc>:tabprevious<CR>i
+imap <C-tab> <Esc>:tabnext<CR>i
+nmap <C-t> :tabnew<CR>
+imap <C-t> <Esc>:tabnew<CR>
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
