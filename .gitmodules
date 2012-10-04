@@ -46,3 +46,9 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = http://github.com/tpope/vim-surround
+[submodule "bundle/todo"]
+	path = bundle/todo
+	url = https://github.com/mivok/vimtodo.git
+[submodule "bundle/dwm"]
+	path = bundle/dwm
+	url = https://github.com/spolu/dwm.vim.git
