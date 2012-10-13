@@ -53,10 +53,3 @@ let g:SuperTabDefaultCompletionType = "context"
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 nmap SQ <ESC>:mksession! ~/.vim/Session.vim<CR>:wqa<CR>
-
-function! RestoreSession()
-  if argc() == 0 "vim called without arguments
-    execute 'source ~/.vim/Session.vim'
-  end
-endfunction
-autocmd VimEnter * call RestoreSession()
