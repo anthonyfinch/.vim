@@ -1,11 +1,41 @@
+set nocompatible   " Disable vi-compatibility
 filetype off
-call pathogen#infect()
-call pathogen#helptags()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'tpope/vim-fugitive'
+Bundle 'msanders/snipmate.vim'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-git'
+Bundle 'ervandew/supertab'
+Bundle 'wincent/Command-T'
+Bundle 'mileszs/ack.vim'
+Bundle 'sjl/gundo.vim'
+Bundle 'vim-scripts/TaskList.vim'
+Bundle 'vim-scripts/The-NERD-tree'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'reinh/vim-makegreen'
+Bundle 'othree/html5.vim'
+Bundle 'mattn/zencoding-vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-surround'
+Bundle 'mivok/vimtodo'
+Bundle 'spolu/dwm.vim'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'johnhamelink/blade.vim'
+Bundle 'klen/python-mode'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'stephenmckinney/vim-solarized-powerline'
+Bundle 'ameade/qtpy-vim'
+Bundle 'vim-scripts/slimv.vim'
+Bundle 'jmcantrell/vim-virtualenv'
 filetype on
 filetype plugin indent on
 set background=dark
 set updatetime=4000
-set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 
