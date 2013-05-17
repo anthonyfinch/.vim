@@ -1,3 +1,4 @@
 .netrwhist
 *.sw?
 Session.vim
+bundle/*

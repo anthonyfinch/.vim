@@ -6,7 +6,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-fugitive'
-Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-git'
 Bundle 'ervandew/supertab'
@@ -32,8 +31,19 @@ Bundle 'stephenmckinney/vim-solarized-powerline'
 Bundle 'ameade/qtpy-vim'
 Bundle 'vim-scripts/slimv.vim'
 Bundle 'jmcantrell/vim-virtualenv'
+Bundle 'tpope/vim-dispatch'
+Bundle 'epeli/slimux'
+
+" snipmate dependiencies
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/vim-snippets"
+
+Bundle "garbas/vim-snipmate"
+
 filetype on
 filetype plugin indent on
+
 set background=dark
 set updatetime=4000
 set laststatus=2   " Always show the statusline
@@ -56,7 +66,6 @@ set autoindent
 set smartindent
 set tabstop=2
 set shiftwidth=2
-set wildchar=<Tab> wildmenu wildmode=full
 set foldmethod=syntax
 set foldlevel=99
 map <c-j> <c-w>j
