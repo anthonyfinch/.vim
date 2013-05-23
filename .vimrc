@@ -76,6 +76,7 @@ map <leader>l <Plug>TaskList
 map <leader>g :GundoToggle<CR>
 map <leader>n :NERDTreeToggle<CR>
 map <leader>t :TlistToggle<CR>
+map <leader>f :CommandT<CR>
 nnoremap th  :tabfirst<CR>
 nnoremap tj  :tabnext<CR>
 nnoremap tk  :tabprev<CR>
